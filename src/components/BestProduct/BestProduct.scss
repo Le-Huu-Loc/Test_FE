@@ -160,18 +160,19 @@
         height: auto;
 
         & .title span:first-child {
-            font-size: 35px;
+            font-size: 20px;
+            margin-top: 25px;
         }
         & .title span:last-child {
-            font-size: 16px;
+            font-size: 14px;
             width: 90%;
         }
 
         & .items {
             flex-wrap: wrap;
             justify-content: space-around;
-            margin: 26px auto 0 auto;
-            padding-bottom: 10px;
+            margin: 0 auto;
+            padding-bottom: 20px;
 
             & .item {
                 width: 45%;

@@ -145,13 +145,13 @@
         }
 
         & .video-object-01 {
-            left: 28%;
-            bottom: 8%;
+            left: 20%;
+            bottom: 10%;
         }
         & .video-object-04 {
             opacity: 0.5;
             left: -20%;
-            top: 35%;
+            top: 40%;
         }
 
         & .video-object-05 {
@@ -160,21 +160,29 @@
 
         & .video-object-07 {
             top: 2px;
-            right: -2px;
+            right: -12%;
+            opacity: 0.5;
         }
 
         & .video-object-06 {
-            right: -5%;
-            top: 8%;
+            right: -15%;
+            top: 6%;
+            opacity: 0.5;
         }
 
         & .video-object-08 {
-            top: 55%;
-            width: 250px;
+            top: 60%;
+            width: 150px;
+            opacity: 0.5;
         }
 
         & .video-object-03 {
-            bottom: 20%;
+            bottom: 25%;
+            width: 75px;
+        }
+
+        & .video-object-09 {
+            display: none;
         }
     }
 }

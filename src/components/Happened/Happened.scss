@@ -177,6 +177,7 @@
 @media screen and(max-width:767px) {
     .happened {
         height: 2020px;
+        overflow: hidden;
         & .title {
             margin: 50px 0 30px 0;
             z-index: 2;
@@ -195,6 +196,10 @@
                 & li {
                     width: 50%;
 
+                    & .item-1 span {
+                        font-size: 30px;
+                    }
+
                     & .item-1 img {
                         transform: rotateZ(90deg);
                     }
@@ -207,6 +212,7 @@
 
                         & .news-obj-3 {
                             left: 85%;
+                            width: 100px;
                         }
                     }
                     & .item-5 {
@@ -224,5 +230,11 @@
                 }
             }
         }
+    }
+    .happened .banner-happened ul li .item-2 span,
+    .happened .banner-happened ul li .item-3 span,
+    .happened .banner-happened ul li .item-4 span,
+    .happened .banner-happened ul li .item-5 span {
+        font-size: 16px;
     }
 }

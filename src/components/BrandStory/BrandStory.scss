@@ -232,10 +232,14 @@
 }
 @media screen and(max-width:767px) {
     .brand-story {
-        height: 85vh;
+        height: 800px;
+
+        & .title span:first-child {
+            text-align: center;
+        }
 
         & .title span:last-child {
-            width: 100%;
+            width: 90%;
         }
         & .object-1 {
             display: none;
@@ -270,19 +274,22 @@
                 }
 
                 & .title {
-                    font-size: 11.5px;
+                    font-size: 8px;
                     right: 0;
                 }
 
                 & .description {
                     font-size: 10px;
-                    top: 16%;
+                    top: 12%;
                     width: 47%;
                     right: 0;
                 }
 
                 & .see-more {
-                    right: 10.5%;
+                    right: 4%;
+                    font-size: 20px;
+                    bottom: 1%;
+                    padding: 0 5px;
                 }
             }
         }
