@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Test_FE/static/css/main.dad36191.chunk.css",
+    "main.css": "/Test_FE/static/css/main.50f81523.chunk.css",
     "main.js": "/Test_FE/static/js/main.f338d1b1.chunk.js",
     "main.js.map": "/Test_FE/static/js/main.f338d1b1.chunk.js.map",
     "runtime-main.js": "/Test_FE/static/js/runtime-main.693933ae.js",
@@ -8,7 +8,7 @@
     "static/js/2.7a5223a7.chunk.js": "/Test_FE/static/js/2.7a5223a7.chunk.js",
     "static/js/2.7a5223a7.chunk.js.map": "/Test_FE/static/js/2.7a5223a7.chunk.js.map",
     "index.html": "/Test_FE/index.html",
-    "static/css/main.dad36191.chunk.css.map": "/Test_FE/static/css/main.dad36191.chunk.css.map",
+    "static/css/main.50f81523.chunk.css.map": "/Test_FE/static/css/main.50f81523.chunk.css.map",
     "static/js/2.7a5223a7.chunk.js.LICENSE.txt": "/Test_FE/static/js/2.7a5223a7.chunk.js.LICENSE.txt",
     "static/media/BestProduct.scss": "/Test_FE/static/media/bes-bg.08b8b84f.png",
     "static/media/best-image-01.dc8ef0b4.png": "/Test_FE/static/media/best-image-01.dc8ef0b4.png",
@@ -33,7 +33,7 @@
   "entrypoints": [
     "static/js/runtime-main.693933ae.js",
     "static/js/2.7a5223a7.chunk.js",
-    "static/css/main.dad36191.chunk.css",
+    "static/css/main.50f81523.chunk.css",
     "static/js/main.f338d1b1.chunk.js"
   ]
 }
