@@ -1,0 +1,125 @@
+.footer {
+    & > .container {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+
+        & .footer--left {
+            margin: 50px 0;
+            & span:first-child {
+                font-size: 14px;
+                font-weight: bold;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 2.14;
+                letter-spacing: normal;
+                text-align: center;
+                color: #111;
+            }
+
+            & span:last-child {
+                display: flex;
+                flex-direction: column;
+                width: 235px;
+                font-family: NotoSansCJKkr;
+                font-size: 14px;
+                font-weight: 300;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 2.14;
+                letter-spacing: normal;
+                text-align: left;
+                color: #111;
+            }
+        }
+
+        & .footer--right {
+            margin-top: 50px;
+            width: 45%;
+            display: flex;
+
+            & .item {
+                display: flex;
+                flex-direction: column;
+                width: 150px;
+                padding: 0 10px;
+                float: right;
+
+                & span:first-child {
+                    font-family: Montserrat;
+                    font-size: 14px;
+                    font-weight: 600;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 2.86;
+                    letter-spacing: normal;
+                    text-align: left;
+                    color: #111;
+                }
+
+                & span:last-child {
+                    font-family: NotoSansCJKkr;
+                    font-size: 14px;
+                    font-weight: 300;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 2.21;
+                    letter-spacing: normal;
+                    text-align: left;
+                    color: #333;
+                }
+            }
+        }
+    }
+    & .contact {
+        width: 80%;
+        margin: 50px auto;
+        display: flex;
+        justify-content: space-between;
+
+        & span {
+            width: 60%;
+            font-family: NotoSansCJKkr;
+            font-size: 14px;
+            font-weight: 300;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.71;
+            letter-spacing: normal;
+            text-align: left;
+            color: #a9a9a9;
+        }
+
+        & .icon {
+            & img {
+                padding: 0 5px;
+            }
+        }
+    }
+}
+
+@media screen and(max-width:767px) {
+    .footer {
+        & > .container {
+            width: 90%;
+            flex-direction: column;
+
+            & .footer--left {
+                margin: 20px auto;
+                width: 90%;
+
+                & span:last-child {
+                    width: unset;
+                }
+            }
+
+            & .footer--right {
+                margin-bottom: 30px;
+                width: unset;
+            }
+        }
+    }
+}

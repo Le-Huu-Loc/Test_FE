@@ -1,0 +1,290 @@
+.brand-story {
+    height: 100vh;
+    background: #0565bb;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+
+    & .title {
+        // margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & span:first-child {
+            font-size: 45px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.33;
+            letter-spacing: 4.5px;
+            text-align: left;
+            color: #fcd32a;
+        }
+
+        & span:last-child {
+            margin: 30px 0;
+            width: 50%;
+            font-family: NotoSansCJKkr;
+            font-size: 16px;
+            font-weight: 300;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.88;
+            letter-spacing: normal;
+            text-align: center;
+            color: #fcd32a;
+        }
+    }
+    .window {
+        display: flex;
+
+        & .container {
+            display: flex;
+            justify-content: center;
+            position: relative;
+
+            & .windowimg {
+                width: 70%;
+                z-index: 3;
+            }
+
+            & .title {
+                position: absolute;
+                font-family: Montserrat;
+                font-size: 20px;
+                font-weight: 800;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 2.4;
+                letter-spacing: normal;
+                text-align: left;
+                color: #222;
+                right: 20.5%;
+                margin-top: 15px;
+                text-transform: uppercase;
+                z-index: 3;
+            }
+
+            & .description {
+                position: absolute;
+                font-family: NotoSansCJKkr;
+                font-size: 13px;
+                font-weight: 300;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.88;
+                letter-spacing: normal;
+                text-align: left;
+                color: #222;
+                width: 30%;
+                right: 18%;
+                top: 23%;
+                z-index: 3;
+            }
+
+            & .see-more {
+                position: absolute;
+                border: solid 3px #020001;
+                background-color: var(--white);
+                bottom: 8%;
+                right: 35.5%;
+                font-family: Montserrat;
+                font-size: 23px;
+                font-weight: 800;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.09;
+                letter-spacing: normal;
+                text-align: left;
+                color: #222;
+                padding: 10px 15px;
+                border-radius: 2px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                z-index: 3;
+
+                &:hover {
+                    background: #ccc;
+                }
+            }
+        }
+
+        & .object-6 {
+            position: absolute;
+            bottom: 3%;
+            left: 0;
+            width: 120px;
+            height: 250px;
+        }
+
+        & .object-7 {
+            position: absolute;
+            bottom: 6%;
+            left: 9.5%;
+            width: 85px;
+            height: 170px;
+            transform: rotateY(5deg);
+            z-index: 1;
+        }
+
+        & .object-4 {
+            position: absolute;
+            right: -15%;
+            bottom: 10%;
+            width: 210px;
+            z-index: 1;
+        }
+
+        & .object-5 {
+            position: absolute;
+            right: -8%;
+            bottom: 3%;
+            z-index: 2;
+            width: 300px;
+        }
+    }
+
+    & .object-1 {
+        position: absolute;
+        width: 100px;
+        top: 25%;
+        left: 7.5%;
+    }
+
+    & .object-2 {
+        position: absolute;
+        right: 13%;
+        top: 4%;
+    }
+    & .object-3 {
+        position: absolute;
+        right: 6%;
+        top: 10%;
+    }
+}
+
+@media screen and(min-width:768px) and(max-width:1023px) {
+    .brand-story {
+        height: 600px;
+
+        & .title span:last-child {
+            width: 60%;
+        }
+        & .object-1 {
+            width: 70px;
+        }
+        & .object-2 {
+            right: 5%;
+            top: 4%;
+            width: 70px;
+        }
+
+        & .object-3 {
+            right: 0;
+            width: 70px;
+        }
+
+        & .window {
+            & .object-4 {
+                width: 190px;
+            }
+            & .object-5 {
+                width: 150px;
+            }
+            & .object-6 {
+                width: 50px;
+                height: 200px;
+            }
+
+            & .object-7 {
+                width: 50px;
+                height: 115px;
+                left: 6.5%;
+            }
+
+            & .container {
+                & .windowimg {
+                    width: 77%;
+                    height: 325px;
+                }
+
+                & .title {
+                    font-size: 16px;
+                    right: 13.5%;
+                }
+
+                & .description {
+                    font-size: 12px;
+                    top: 16%;
+                    width: 36%;
+                    right: 13%;
+                }
+
+                & .see-more {
+                    right: 27.5%;
+                }
+            }
+        }
+    }
+}
+@media screen and(max-width:767px) {
+    .brand-story {
+        height: 85vh;
+
+        & .title span:last-child {
+            width: 100%;
+        }
+        & .object-1 {
+            display: none;
+        }
+        & .object-2 {
+            display: none;
+        }
+
+        & .object-3 {
+            display: none;
+        }
+
+        & .window {
+            & .object-4 {
+                display: none;
+            }
+            & .object-5 {
+                display: none;
+            }
+            & .object-6 {
+                display: none;
+            }
+
+            & .object-7 {
+                display: none;
+            }
+
+            & .container {
+                & .windowimg {
+                    width: 100%;
+                    height: 325px;
+                }
+
+                & .title {
+                    font-size: 11.5px;
+                    right: 0;
+                }
+
+                & .description {
+                    font-size: 10px;
+                    top: 16%;
+                    width: 47%;
+                    right: 0;
+                }
+
+                & .see-more {
+                    right: 10.5%;
+                }
+            }
+        }
+    }
+}

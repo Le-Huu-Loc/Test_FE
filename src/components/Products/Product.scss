@@ -1,0 +1,97 @@
+.body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .products {
+        width: 80%;
+        margin: 100px auto 50px auto;
+        background: #fff;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        & .container {
+            width: 18%;
+            margin-bottom: 20px;
+
+            & img {
+                width: 100%;
+            }
+
+            & .title {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                & span {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    &:last-child {
+                        width: 25%;
+                    }
+                }
+            }
+
+            & .name {
+                font-size: 14px;
+                font-weight: 600;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.94;
+                letter-spacing: normal;
+                text-align: left;
+                color: #222;
+            }
+        }
+    }
+    .see-more {
+        border: solid 3px #020001;
+        background-color: var(--white);
+        font-size: 23px;
+        font-weight: 800;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.09;
+        letter-spacing: normal;
+        text-align: left;
+        color: #222;
+        padding: 10px 20px;
+        margin-bottom: 50px;
+        cursor: pointer;
+
+        &:hover {
+            background: #ccc;
+        }
+    }
+}
+
+@media screen and(min-width:768px) and(max-width:1023px) {
+    .body {
+        & .products {
+            width: 90%;
+
+            & .container {
+                width: 30%;
+            }
+        }
+    }
+}
+@media screen and(max-width:767px) {
+    .body {
+        & .products {
+            width: 90%;
+
+            & .container {
+                width: 48%;
+
+                & .name {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,118 @@
+.header {
+    background: #111111;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+
+    & .container {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+
+        & .header__items {
+            & ul {
+                display: flex;
+
+                & li {
+                    color: #fff;
+                    list-style-type: none;
+                    text-transform: uppercase;
+
+                    font-size: 14px;
+                    padding: 0 15px;
+                    cursor: pointer;
+                }
+
+                & li:nth-child(3) {
+                    border-right: 1px solid #ccc8c6;
+                }
+            }
+            & .showHide-menu {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and(max-width:1023px) {
+    .header {
+        position: fixed;
+        width: 100vw;
+        z-index: 999;
+
+        & .container {
+            & .header__logo {
+                z-index: 2;
+            }
+            & .header__items {
+                position: absolute;
+                top: 0;
+                right: 0;
+                left: 0;
+                display: flex;
+                flex-direction: column-reverse;
+                align-items: flex-end;
+
+                & ul {
+                    display: flex;
+                    flex-direction: column-reverse;
+                    margin: 0;
+                    padding: 0;
+                    width: 100%;
+                    z-index: 3;
+                    display: none;
+                    height: 100vh;
+                    opacity: 0.9;
+                    background: #000;
+                    overflow: hidden;
+
+                    & li {
+                        line-height: 80px;
+                        z-index: 1;
+                        width: 100%;
+                        text-align: right;
+                        // background: #000;
+                        opacity: 0.8;
+                        padding: 0 15px 0 0;
+                        transform: translateX(-15px);
+
+                        border-top: 1px solid #fff;
+                        font-weight: bold;
+                    }
+
+                    & li:nth-child(3) {
+                        border-right: none;
+                    }
+                    & li:last-child {
+                        border-bottom: 1px solid #fff;
+                    }
+                }
+
+                & .showHide-menu {
+                    display: block;
+                    padding: 0 20px;
+                    width: 50px;
+                    line-height: 80px;
+                    font-size: 30px;
+                    text-align: right;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .show-menu {
+        display: block !important;
+        animation: showmenu 0.5s ease;
+    }
+}
+@keyframes showmenu {
+    0% {
+        transform: translateX(200px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
